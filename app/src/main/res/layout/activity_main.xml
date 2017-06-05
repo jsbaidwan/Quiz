@@ -119,6 +119,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/result_button"
             android:text="submit"
             android:onClick="submit"
             android:layout_gravity="center_horizontal"
