@@ -6,17 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.jaspreetsingh.quiz.MainActivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/question_linear_layout"
-        android:layout_centerHorizontal="true"
-        android:text="submit"/>
 
     <LinearLayout
         android:id="@+id/question_linear_layout"
@@ -24,42 +14,51 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <EditText
+            android:id="@+id/participant_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Your Name"/>
+            android:hint="Enter Your Name"
+            android:maxLines="1"/>
 
     <TextView
         style="@style/question_text_style"
         android:text="Which of the following are prime number?"
        />
-        <CheckBox
-            style="@style/multiple_choice_answers_styles"
-            android:text="8"
+            <CheckBox
+                android:id="@+id/mcq_prime_number_answer_8"
+                style="@style/multiple_choice_answers_styles"
+                android:text="8"
 
-            />
-        <CheckBox
-            style="@style/multiple_choice_answers_styles"
-            android:text="11"
-            />
-        <CheckBox
-            style="@style/multiple_choice_answers_styles"
-            android:text="33"
-            />
+                />
+            <CheckBox
+                android:id="@+id/mcq_prime_number_answer_11"
+                style="@style/multiple_choice_answers_styles"
+                android:text="11"
+                />
+            <CheckBox
+                android:id="@+id/mcq_prime_number_answer_33"
+                style="@style/multiple_choice_answers_styles"
+                android:text="33"
+                />
+
         <TextView
             style="@style/question_text_style"
             android:text="For which of the following disciplines is Noble Pize awarded?" />
-        <CheckBox
-            style="@style/multiple_choice_answers_styles"
-            android:text="Physics"
-            />
-        <CheckBox
-            style="@style/multiple_choice_answers_styles"
-            android:text="Chemistry"
-            />
-        <CheckBox
-            style="@style/multiple_choice_answers_styles"
-            android:text="Computers"
-            />
+            <CheckBox
+                android:id="@+id/mcq_noble_prize_answer_physics"
+                style="@style/multiple_choice_answers_styles"
+                android:text="Physics"
+                />
+            <CheckBox
+                android:id="@+id/mcq_noble_prize_answer_chemistry"
+                style="@style/multiple_choice_answers_styles"
+                android:text="Chemistry"
+                />
+            <CheckBox
+                android:id="@+id/mcq_noble_prize_answer_computer"
+                style="@style/multiple_choice_answers_styles"
+                android:text="Computers"
+                />
         <TextView
             style="@style/question_text_style"
             android:text="Who is founder of Android?"
@@ -68,14 +67,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/rb_android_founder_answer_larry"
                 style="@style/multiple_choice_answers_styles"
                 android:text="Larry Page"
                 />
             <RadioButton
+                android:id="@+id/rb_android_founder_answer_wozniak"
                 style="@style/multiple_choice_answers_styles"
                 android:text="Steve Wozniak"
                 />
             <RadioButton
+                android:id="@+id/rb_android_founder_answer_rubin"
                 style="@style/multiple_choice_answers_styles"
                 android:text="Andy Rubin"
                 />
@@ -88,14 +90,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/rb_first_on_moon_year_answer_l942"
                 style="@style/multiple_choice_answers_styles"
                 android:text="1942"
                 />
             <RadioButton
+                android:id="@+id/rb_first_on_moon_year_answer_l969"
                 style="@style/multiple_choice_answers_styles"
                 android:text="1969"
                 />
             <RadioButton
+                android:id="@+id/rb_first_on_moon_year_answer_l976"
                 style="@style/multiple_choice_answers_styles"
                 android:text="1976"
                 />
@@ -105,9 +110,30 @@
             android:text="A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?"
             />
         <EditText
+            android:id="@+id/math_question_answer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:onClick="submit"
+            android:layout_gravity="center_horizontal"
+            android:background="#43d497"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/result_text_view"
+            android:padding="20dp"
+            android:text="Result"
+            android:textSize="16sp"
+            />
 
     </LinearLayout>
-</RelativeLayout>
+
+
 </ScrollView>
