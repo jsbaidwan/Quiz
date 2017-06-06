@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.R.attr.name;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
@@ -34,21 +35,26 @@ int score = 0;
         //Disable the button on clicking the button so that user can take test once
         Button endTest = (Button) findViewById(R.id.result_button);
         endTest.setClickable(false);
+
+        // Display the Toast to ask user to take test only once
+        Toast toast = Toast.makeText(this, "Test can be taken once", Toast.LENGTH_LONG );
+        toast.show();
     }
     /*
     This method create the summary of the result
      */
     public String resultSummary(String name)   {
         String resultMessage = name;
-        resultMessage += " scored: " + score + " out of 5 questions";
+        resultMessage += " score " + score + " out of 5 questions";
         return resultMessage;
     }
 
     public void question1()  {
         CheckBox answer1 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_8);
         Boolean isAnswer1 = answer1.isChecked();
-        if(isAnswer1)   {
-            score++;
+
+        if(isAnswer1 )   {
+                score++;
         }
     }
 
