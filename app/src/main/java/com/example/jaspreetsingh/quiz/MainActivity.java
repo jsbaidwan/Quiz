@@ -49,11 +49,16 @@ int score = 0;
         return resultMessage;
     }
 
-    public void question1()  {
+    private void question1()  {
         CheckBox answer1 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_8);
         Boolean isAnswer1 = answer1.isChecked();
+        CheckBox answer2 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_11);
+        Boolean isAnswer2 = answer2.isChecked();
+        CheckBox answer3 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_33);
+        Boolean isAnswer3 = answer3.isChecked();
 
-        if(isAnswer1 )   {
+
+        if(isAnswer1 && !isAnswer2 && !isAnswer3 )   {
                 score++;
         }
     }
