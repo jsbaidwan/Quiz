@@ -27,7 +27,7 @@ int score = 0;
         String name = nameField.getText().toString();
 
         question1();
-
+        question2();
         String resultMessage = resultSummary(name);
 
         displayResult(resultMessage);
@@ -48,21 +48,45 @@ int score = 0;
         resultMessage += " score " + score + " out of 5 questions";
         return resultMessage;
     }
-
+    /*
+    * Fetch the input of question 1 and counter the correct answer
+    * Which of the following is the prime number?
+     */
     private void question1()  {
+        //figure out if user choose answer 1 i.e. 8
         CheckBox answer1 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_8);
         Boolean isAnswer1 = answer1.isChecked();
+        //figure out if user choose answer 2 i.e. 11
         CheckBox answer2 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_11);
         Boolean isAnswer2 = answer2.isChecked();
+        //figure our if user choose answer 3 i.e. 33
         CheckBox answer3 = (CheckBox) findViewById(R.id.mcq_prime_number_answer_33);
         Boolean isAnswer3 = answer3.isChecked();
 
-
-        if(isAnswer1 && !isAnswer2 && !isAnswer3 )   {
+        if(!isAnswer1 && isAnswer2 && !isAnswer3 )   {
                 score++;
         }
     }
+    /*
+    * Fetch the input of question 2 and counter the correct answer
+    * For which of the following disciplines Noble Prize is awarded?
+     */
+    private void question2()  {
+        //figure out if user choose answer 1 i.e. Physics
+        CheckBox answer1 = (CheckBox) findViewById(R.id.mcq_noble_prize_answer_physics);
+        Boolean isAnswer1 = answer1.isChecked();
+        //figure out if user choose answer 2 i.e. Chemistry
+        CheckBox answer2 = (CheckBox) findViewById(R.id.mcq_noble_prize_answer_chemistry);
+        Boolean isAnswer2 = answer2.isChecked();
+        //figure our if user choose answer 3 i.e. Computers
+        CheckBox answer3 = (CheckBox) findViewById(R.id.mcq_noble_prize_answer_computer);
+        Boolean isAnswer3 = answer3.isChecked();
 
+
+        if(isAnswer1 && isAnswer2 && !isAnswer3 )   {
+            score++;
+        }
+    }
 
     /*
     This method display the result summary in the TextView
