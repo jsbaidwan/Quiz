@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,8 @@ int score = 0;
 
         question1();
         question2();
+        question3();
+
         String resultMessage = resultSummary(name);
 
         displayResult(resultMessage);
@@ -82,8 +85,22 @@ int score = 0;
         CheckBox answer3 = (CheckBox) findViewById(R.id.mcq_noble_prize_answer_computer);
         Boolean isAnswer3 = answer3.isChecked();
 
-
+        //Check id selected answer is correct
         if(isAnswer1 && isAnswer2 && !isAnswer3 )   {
+            score++;
+        }
+    }
+    /*
+    * Fetch the input of question 2 and counter the correct answer
+    * For which of the following disciplines Noble Prize is awarded?
+     */
+    private void question3() {
+        //figure out if user choose answer 1 i.e. Physics
+        RadioButton answer1 = (RadioButton) findViewById(R.id.rb_android_founder_answer_rubin);
+        Boolean isAnswer1 = answer1.isChecked();
+
+        //Check if selected answer is correct
+        if (isAnswer1 ) {
             score++;
         }
     }
