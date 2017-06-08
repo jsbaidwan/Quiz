@@ -30,6 +30,7 @@ int score = 0;
         question1();
         question2();
         question3();
+        question4();
 
         String resultMessage = resultSummary(name);
 
@@ -91,12 +92,26 @@ int score = 0;
         }
     }
     /*
-    * Fetch the input of question 2 and counter the correct answer
-    * For which of the following disciplines Noble Prize is awarded?
+    * Fetch the input of question 3 and counter the correct answer
+    * Who is founder of Android?
      */
     private void question3() {
-        //figure out if user choose answer 1 i.e. Physics
+        //figure out if user choose answer 1 i.e. Andy Rubin
         RadioButton answer1 = (RadioButton) findViewById(R.id.rb_android_founder_answer_rubin);
+        Boolean isAnswer1 = answer1.isChecked();
+
+        //Check if selected answer is correct
+        if (isAnswer1 ) {
+            score++;
+        }
+    }
+    /*
+    * Fetch the input of question 4 and counter the correct answer
+    * In which year Neil Armstrong became the first perosn to land on Moon?
+     */
+    private void question4() {
+        //figure out if user choose answer 1 i.e. 1969
+        RadioButton answer1 = (RadioButton) findViewById(R.id.rb_first_on_moon_year_answer_l969);
         Boolean isAnswer1 = answer1.isChecked();
 
         //Check if selected answer is correct
