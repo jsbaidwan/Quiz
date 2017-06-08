@@ -17,53 +17,53 @@
             android:id="@+id/participant_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Your Name"
+            android:hint="@string/name_hint"
             android:maxLines="1"
             android:paddingLeft="10dp"
             android:inputType="textCapWords"/>
 
     <TextView
         style="@style/question_text_style"
-        android:text="Which of the following are prime number?"
+        android:text="@string/question1_prime_number"
        />
             <CheckBox
                 android:id="@+id/mcq_prime_number_answer_8"
                 style="@style/multiple_choice_answers_styles"
-                android:text="8"
+                android:text="@string/question1_answer1_8"
 
                 />
             <CheckBox
                 android:id="@+id/mcq_prime_number_answer_11"
                 style="@style/multiple_choice_answers_styles"
-                android:text="11"
+                android:text="@string/question1_answer2_11"
                 />
             <CheckBox
                 android:id="@+id/mcq_prime_number_answer_33"
                 style="@style/multiple_choice_answers_styles"
-                android:text="33"
+                android:text="@string/question1_answer3_33"
                 />
 
         <TextView
             style="@style/question_text_style"
-            android:text="For which of the following disciplines is Noble Pize awarded?" />
+            android:text="@string/question2_noble_prize" />
             <CheckBox
                 android:id="@+id/mcq_noble_prize_answer_physics"
                 style="@style/multiple_choice_answers_styles"
-                android:text="Physics"
+                android:text="@string/question2_answer1_physics"
                 />
             <CheckBox
                 android:id="@+id/mcq_noble_prize_answer_chemistry"
                 style="@style/multiple_choice_answers_styles"
-                android:text="Chemistry"
+                android:text="@string/question2_answer2_chemistry"
                 />
             <CheckBox
                 android:id="@+id/mcq_noble_prize_answer_computer"
                 style="@style/multiple_choice_answers_styles"
-                android:text="Computers"
+                android:text="@string/question2_answer3_computers"
                 />
         <TextView
             style="@style/question_text_style"
-            android:text="Who is founder of Android?"
+            android:text="@string/question3_android"
             />
         <RadioGroup
             android:layout_width="match_parent"
@@ -71,22 +71,22 @@
             <RadioButton
                 android:id="@+id/rb_android_founder_answer_larry"
                 style="@style/multiple_choice_answers_styles"
-                android:text="Larry Page"
+                android:text="@string/question3_answer1_larry"
                 />
             <RadioButton
                 android:id="@+id/rb_android_founder_answer_wozniak"
                 style="@style/multiple_choice_answers_styles"
-                android:text="Steve Wozniak"
+                android:text="@string/question3_answer2_wozniak"
                 />
             <RadioButton
                 android:id="@+id/rb_android_founder_answer_rubin"
                 style="@style/multiple_choice_answers_styles"
-                android:text="Andy Rubin"
+                android:text="@string/question3_answer3_rubin"
                 />
         </RadioGroup>
         <TextView
             style="@style/question_text_style"
-            android:text="In which year Neil Armstrong became the first person to land on Moon?"
+            android:text="@string/question4_moon_landing"
             />
         <RadioGroup
             android:layout_width="match_parent"
@@ -94,22 +94,22 @@
             <RadioButton
                 android:id="@+id/rb_first_on_moon_year_answer_l942"
                 style="@style/multiple_choice_answers_styles"
-                android:text="1942"
+                android:text="@string/question4_answer1_1942"
                 />
             <RadioButton
                 android:id="@+id/rb_first_on_moon_year_answer_l969"
                 style="@style/multiple_choice_answers_styles"
-                android:text="1969"
+                android:text="@string/question4_answer2_1969"
                 />
             <RadioButton
                 android:id="@+id/rb_first_on_moon_year_answer_l976"
                 style="@style/multiple_choice_answers_styles"
-                android:text="1976"
+                android:text="@string/question4_answer3_1972"
                 />
         </RadioGroup>
         <TextView
             style="@style/question_text_style"
-            android:text="A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?"
+            android:text="@string/question5_maths"
             />
         <EditText
             android:id="@+id/math_question_answer"
@@ -132,7 +132,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RESULT"
+            android:text="@string/result"
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingLeft="16dp"

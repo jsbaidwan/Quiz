@@ -1,3 +1,49 @@
 <resources>
+    <!--Title for the application-->
     <string name="app_name">Quiz</string>
+
+    <!--Text hint to Enter the Name-->
+    <string name="name_hint">Enter you Name</string>
+
+    <!-- Text of Question 1 -->
+    <string name="question1_prime_number">Which of the following are prime number?</string>
+    <!--Text of answer1 for question1-->
+    <string name="question1_answer1_8">8</string>
+    <!--Text of answer2 for question1-->
+    <string name="question1_answer2_11">11</string>
+    <!--Text of answer3 for question1-->
+    <string name="question1_answer3_33">33</string>
+
+    <!-- Text of Question 2 -->
+    <string name="question2_noble_prize">For which of the following disciplines is Noble Pize awarded?</string>
+    <!--Text of answer1 for question2-->
+    <string name="question2_answer1_physics">Physics</string>
+    <!--Text of answer2 for question2-->
+    <string name="question2_answer2_chemistry">Chemistry</string>
+    <!--Text of answer3 for question2-->
+    <string name="question2_answer3_computers">Computers</string>
+
+    <!-- Text of Question 3 -->
+    <string name="question3_android">Who is the founder of Android?</string>
+    <!--Text of answer1 for question3-->
+    <string name="question3_answer1_larry">Larry Page</string>
+    <!--Text of answer2 for question3-->
+    <string name="question3_answer2_wozniak">Steve Wozniak</string>
+    <!--Text of answer3 for question3-->
+    <string name="question3_answer3_rubin">Andy Rubin</string>
+
+    <!-- Text of Question 4 -->
+    <string name="question4_moon_landing">In which year Neil Armstrong became the first person to land on Moon?</string>
+    <!--Text of answer1 for question4-->
+    <string name="question4_answer1_1942">1942</string>
+    <!--Text of answer2 for question4-->
+    <string name="question4_answer2_1969">1969</string>
+    <!--Text of answer3 for question4-->
+    <string name="question4_answer3_1972">1972</string>
+
+    <!-- Text of Question 4 -->
+    <string name="question5_maths">A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?</string>
+
+    <!--Text header for RESULT-->
+    <string name="result">RESULT<u>underline</u>.</string>
 </resources>
