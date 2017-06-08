@@ -85,7 +85,7 @@
         </RadioGroup>
         <TextView
             style="@style/question_text_style"
-            android:text="In which year Neil Armstrong became the first perosn to land on Moon?"
+            android:text="In which year Neil Armstrong became the first person to land on Moon?"
             />
         <RadioGroup
             android:layout_width="match_parent"
@@ -115,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
+            android:inputType="number"
             />
         <Button
             android:layout_width="wrap_content"
@@ -131,7 +132,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/result_text_view"
             android:padding="20dp"
-            android:text="Result"
             android:textSize="16sp"
             />
 

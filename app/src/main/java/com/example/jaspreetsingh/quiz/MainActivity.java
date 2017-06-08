@@ -31,6 +31,7 @@ int score = 0;
         question2();
         question3();
         question4();
+        question5();
 
         String resultMessage = resultSummary(name);
 
@@ -107,7 +108,7 @@ int score = 0;
     }
     /*
     * Fetch the input of question 4 and counter the correct answer
-    * In which year Neil Armstrong became the first perosn to land on Moon?
+    * In which year Neil Armstrong became the first person to land on Moon?
      */
     private void question4() {
         //figure out if user choose answer 1 i.e. 1969
@@ -116,6 +117,21 @@ int score = 0;
 
         //Check if selected answer is correct
         if (isAnswer1 ) {
+            score++;
+        }
+    }
+    /*
+   * Fetch the input of question 4 and counter the correct answer
+   * A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?
+    */
+    private void question5() {
+        //figure out if user choose answer i.e. 5
+        EditText answer = (EditText) findViewById(R.id.math_question_answer);
+        String answerAsString = answer.getText().toString();
+
+        int isAnswer1 = Integer.parseInt(answerAsString);
+        //Check if original answer matches user input
+        if (isAnswer1 == 5) {
             score++;
         }
     }
