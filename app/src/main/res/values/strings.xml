@@ -45,5 +45,5 @@
     <string name="question5_maths">A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?</string>
 
     <!--Text header for RESULT-->
-    <string name="result">RESULT<u>underline</u>.</string>
+    <string name="result"><u>RESULT</u></string>
 </resources>

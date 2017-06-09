@@ -128,12 +128,19 @@ int score = 0;
         //figure out if user choose answer i.e. 5
         EditText answer = (EditText) findViewById(R.id.math_question_answer);
         String answerAsString = answer.getText().toString();
+        //Check if there is no input the EditText box, it will skip the parseInt i.e.
+        //it will not convert the string to Integer. Because if do not give input and still parseInt.
+        //It leads to crash
+        if(answerAsString.equals(""))   {
+            return;
+        }
 
         int isAnswer1 = Integer.parseInt(answerAsString);
         //Check if original answer matches user input
         if (isAnswer1 == 5) {
             score++;
         }
+
     }
 
     /*
